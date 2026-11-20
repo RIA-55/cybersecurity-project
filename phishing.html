@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phishing Awareness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Stay Safe Online</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="passwords.html">Passwords</a>
+      <a href="phishing.html">Phishing</a>
+      <a href="#">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Phishing Awareness</h2>
+    <p>Phishing is when someone pretends to be a bank, company or
+       friend to trick you into sharing passwords, OTPs or money.</p>
+
+    <h3>Warning signs</h3>
+    <ul>
+      <li>Urgent threats ("your account will be blocked today").</li>
+      <li>Links that don't match the real website name.</li>
+      <li>Requests for OTP, PIN or password.</li>
+      <li>Spelling mistakes and unknown sender numbers.</li>
+    </ul>
+
+    <h3>Real or Fake?</h3>
+    <div id="msgbox"></div>
+    <button onclick="answer(true)">Real</button>
+    <button onclick="answer(false)">Fake</button>
+    <p id="feedback"></p>
+    <button id="nextBtn" onclick="nextMsg()">Next message</button>
+  </main>
+
+  <footer>Field Project, YCMOU BCA</footer>
+  <script src="phishing.js"></script>
+</body>
+</html>
